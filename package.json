@@ -1,1 +1,40 @@
-{     "devDependencies": {         "redis-mock": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-redis-mock",     "homepage": "https://github.com/npmtest/node-npmtest-redis-mock",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-redis-mock.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [redis-mock (v0.16.0)](https://github.com/yeahoffline/redis-mock#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-redis-mock.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-redis-mock) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-redis-mock.svg)](https://travis-ci.org/npmtest/node-npmtest-redis-mock)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "redis-mock": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-redis-mock",
+    "keywords": [
+        "coverage",
+        "test",
+        "redis-mock"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_redis_mock.js",
+    "name": "npmtest-redis-mock",
+    "nameAlias": "npmtest_redis_mock",
+    "nameOriginal": "npmtest-redis-mock",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-redis-mock.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
