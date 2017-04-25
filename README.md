@@ -1,6 +1,6 @@
 # npmtest-redis-mock
 
-#### test coverage for  [redis-mock (v0.16.0)](https://github.com/yeahoffline/redis-mock#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-redis-mock.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-redis-mock) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-redis-mock.svg)](https://travis-ci.org/npmtest/node-npmtest-redis-mock)
+#### basic test coverage for  [redis-mock (v0.16.0)](https://github.com/yeahoffline/redis-mock#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-redis-mock.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-redis-mock) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-redis-mock.svg)](https://travis-ci.org/npmtest/node-npmtest-redis-mock)
 
 #### Redis client mock object for unit testing
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-redis-mock/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-redis-mock/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-redis-mock/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-redis-mock/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-redis-mock/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-redis-mock/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-redis-mock/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-redis-mock/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-redis-mock/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-redis-mock/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-redis-mock/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-redis-mock/build/coverage.html/index.html)
 
@@ -116,7 +116,8 @@
     "scripts": {
         "test": "make test"
     },
-    "version": "0.16.0"
+    "version": "0.16.0",
+    "bin": {}
 }
 ```
 
